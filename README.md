@@ -43,7 +43,7 @@ External Adapter -
 ### Chainlink Node and External Adapter job
 1. I used Linkpool's Naas for this - it's on Kovan so can work with Keepers and easy to setup! So do that first.
 2. In order to process jobs, you need to deploy your Oracle smart contract and have it point at your node's address. This project uses "large responses" (https://docs.chain.link/docs/large-responses/) so you need to deploy the Operator.sol contract rather than the Oracle.sol - https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.7/Operator.sol
-3. I created a new Bridge and new Job (JSON, not TOML :/) to call out to my Lambda function. See EAjob.txt
+3. I created a new Bridge and new Job (JSON, not TOML :/) to call out to my Lambda function. See EAJob.txt in the EA git repository.
 
 ## Setting up the Keeper Job
 1. Navigate to https://keepers.chain.link/kovan
