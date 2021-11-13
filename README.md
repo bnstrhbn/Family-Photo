@@ -1,7 +1,7 @@
 # Family-Photo
 For the Chainlink Fall Hackathon 2021
 # Background
-This project allows a user to create a Family Photo NFT (FAM). A Family Photo is an ERC-721 that stores pointers to other ERC-721 NFTs. 
+This project allows a user to create a Family Photo NFT (FAM). A Family Photo is an ERC-721 where each token stores pointers to other ERC-721 NFTs. 
 A user will mint a new FAM which opens it up for that user or other users to "add" their own NFTs to it. "Add" being used loosely here - there isn't any actual token transfer.
 At some point, the minting user can decide to "finalize" the FAM they minted, which will generate an image for that FAM based on all the NFTs added to it. This is done via a custom Chainlink External Adapter currently deployed to Kovan (until my Linkpool node expires) Right now mainly IPFS image URI, URLs, or JSON are supported ways to find that image.
 Then, if a person who added their NFT to a FAM ever moves that NFT from their wallet, the FAM will automatically regenerate a new image with that NFT blacked out (well - darkened out). This is triggered via a Keeper job currently running on Kovan.
