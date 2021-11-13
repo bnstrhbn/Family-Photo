@@ -11,7 +11,7 @@ This project contains Solidity and Python deployment scripts for Family Photo. C
 
 # Setup
 1. This is just the Solidity file for the ParentNFT (Family Photo) contract and a quick ChildNFT test contract as well.
-2. See <link> to pull down the Chainlink External Adapter code I'm using and deploy it on a node.
+2. See https://github.com/bnstrhbn/IPFS-NFT-EA/tree/master to pull down the Chainlink External Adapter code I'm using and deploy it on a node.
 3. See <link> to pull down a basic React frontend to interact with these contracts if you don't want to use Etherscan. 
 
 ## Requirements
