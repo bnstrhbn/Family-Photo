@@ -54,3 +54,6 @@ External Adapter -
 1. Change contract address variables to point to your ParentNFT contract deployed on Kovan. Add your Alchemy Key to a .env file (used in index.tsx as config with @usedapp)
 2. You may need to regenerate the ABI jsons using: npx typechain --target ethers-v5 --out-dir src/abis/types './src/abis/*.json'
 3. "yarn start" to run this on localhost.
+
+Example of what the front end looks like!
+![Alt text](./frontend_example.png?raw=true "Frontend Example")
