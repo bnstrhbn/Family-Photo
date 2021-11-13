@@ -1,5 +1,5 @@
 # Family-Photo
-For the Chainlink Fall Hackathon 2021
+For the Chainlink Fall Hackathon 2021.
 # Background
 This project allows a user to create a Family Photo NFT (FAM). A Family Photo is an ERC-721 where each token stores pointers to other ERC-721 NFTs. 
 A user will mint a new FAM which opens it up for that user or other users to "add" their own NFTs to it. "Add" being used loosely here - there isn't any actual token transfer.
