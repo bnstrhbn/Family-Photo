@@ -38,7 +38,7 @@ External Adapter -
 ### Python
 1. I mostly followed these steps for deploying my Python code to Docker for local testing and AWS for the EA: https://github.com/thodges-gh/CL-EA-Python-Template
 2. To work with Docker, had to add Pillow as a requirement to the pipfile. 
-3. To work on AWS I followed the Lambda function instructions from the link above too. In addition, I added two Layers to my function. Pillow and requests from Klayers (https://github.com/keithrozario/Klayers)
+3. To work on AWS I followed the Lambda function instructions from the link above too. In addition, I added two Layers to my function. Pillow and requests from Klayers (https://github.com/keithrozario/Klayers). I also set the timeout to several minutes in case processing takes a while - it seemed like IPFS took a while to upload an image sometimes.
 
 ### Chainlink Node and External Adapter job
 1. I used Linkpool's Naas for this - it's on Kovan so can work with Keepers and easy to setup! So do that first.
