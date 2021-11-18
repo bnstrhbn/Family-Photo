@@ -57,3 +57,12 @@ External Adapter -
 
 Example of what the front end looks like!
 ![Alt text](./frontend_example.png?raw=true "Frontend Example")
+
+## Future enhancements
+There's a lot of cool things that could be done to enhance this project - really basically, it would be fun to add support for OpenSea's generic NFT structure and for CryptoPunks. I think that this could be a cool thing for NFT (Profile Pic)-based DAO-like groups like Bored Ape Yacht Club members to mint Family Photos of groups of members to show that they all have "iron hands" and will never get rid of their NFTs. Given that might be a cool use-case for this project, it would be cool to be able for the original minting user to specify a given dimension of the resulting image so they can determine how they want to use it ahead of time - for example, your Twitter banner requires a different image ratio than something like a profile picture. 
+
+I also wanted to get into using Filecoin instead of IPFS but didn't have time to get that running. Ideally if you're storing images to NFTs like this you have something safely persistent other than IPFS. On a related note, in a real deployment you'd probably want NFT-contributing users to send LINK/FIL or payment to convert to LINK and FIL along when they add their NFT to a Family Photoin order to cover future costs of maintaining the NFTs.
+
+In my mind, the top really cool enhancements to this project are:
+1) Cross-chain pointers via CCIP - since my NFTs are just storing pointers to NFTs, why not deploy this contract on a less gas-intensive L1 or L2 like Avalanche or Arbitrum and just point to NFTs on Ethereum mainnet? Most of the big NFT projects at this point are on mainnet but gas costs would be too prohibitive to allow this project to really work there.  Now that I'm thinking about it, since my EA is ultimately handling my pointers and image manipulation, it might be reasonable to add some ability to check pointers across multiple chains in there.
+2) Think of something like GIMP as the image manipulation tool here rather than simply tiling out the image URIs. Given a really cool image manipulation layer on top of the frontend, you could do really cool collages of NFTs all mashed on top of each other in unique ways that then still black out if a user moves them.
